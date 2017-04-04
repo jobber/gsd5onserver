@@ -7,6 +7,6 @@
   "author": "Jobber",
   "license": "MIT",
   "dependencies": {
-    "tiddlywiki": "^5.1.13"
+    "tiddlywiki": "Jermolene/TiddlyWiki5#773ef6a"
   }
 }
