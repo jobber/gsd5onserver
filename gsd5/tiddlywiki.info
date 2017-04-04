@@ -6,6 +6,7 @@
 		"tiddlywiki/filesystem"
 	],
 	"themes": [
+		"tiddlywiki/seamless",
 		"tiddlywiki/vanilla",
 		"tiddlywiki/snowwhite"
 	],
