@@ -1,0 +1,44 @@
+title: $:/plugins/gsd5/ticklers/stylesheet/datepicker-stylesheet
+tags: $:/tags/Stylesheet
+
+.tw-calendar {
+  position: relative;
+  min-height: 17px;
+}
+
+.tw-calendar-popup {
+  font-family: monospace;
+  border-collapse: collapse;
+  display: none;
+  position: absolute;
+  margin: 0;
+  margin-top: 22px;
+  background-color: <<colour background>>;
+  cursor: default;
+  z-index: 10;
+}
+
+.tw-calendar-date:hover {
+  background-color: <<colour primary>>;
+  color: #fff;
+}
+
+.tw-calendar-left:hover {
+  background-color: <<colour primary>>;
+  color: #fff;
+}
+
+.tw-calendar-right:hover {
+  background-color: <<colour primary>>;
+  color: #fff;
+}
+
+/* Fix trashcan on alert title when body is empty. */
+.tc-alert-subtitle {
+  padding-right: 20px;
+}
+
+.gsd_tickler_input {
+  margin-top: 5px;
+  width: 40px;
+}

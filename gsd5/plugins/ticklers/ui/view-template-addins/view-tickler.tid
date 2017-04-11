@@ -1,0 +1,6 @@
+title: $:/plugins/gsd5/core/ui/addins/ViewTickler
+tags: $:/tags/GSD5ActionPlugin
+
+Tickler Date:
+<$date field="gsd_tickdate"/>
+Repeat: <$edit class="gsd_tickler_input" field="gsd_tickdays"/> days 
