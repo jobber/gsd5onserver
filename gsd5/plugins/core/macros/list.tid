@@ -23,10 +23,9 @@ tags: $:/tags/Macro
         </$list>
         </div>
     </$list>
-    <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"false" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"false" groupTailHeader:"true" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
     <div class="tc-menu-list-item  gsd5-project-list">
-        No Group
-    </div>
+    <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"false" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"false" groupTailHeader:"true" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
+        no group
     </$list>
     <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"false" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"true" groupTailHeader:"false" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
         <div class="tc-menu-list-subitem">
@@ -35,6 +34,7 @@ tags: $:/tags/Macro
             &nbsp;<$transclude tiddler="$:/plugins/gsd5/core/ui/lists/ListViewSuffix"/>
         </div>
     </$list>
+    </div>
     </$reveal>
 </$reveal>
 <!-- Realm -->
@@ -53,18 +53,18 @@ tags: $:/tags/Macro
         </$list>
         </div>
     </$list>
-    <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"true" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"false" groupTailHeader:"true" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
     <div class="tc-menu-list-item  gsd5-project-list">
-        No Group
+        <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"true" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"false" groupTailHeader:"true" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
+            no group
+        </$list>
+        <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"true" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"true" groupTailHeader:"false" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
+            <div class="tc-menu-list-subitem">
+                <$transclude tiddler="$:/plugins/gsd5/core/ui/lists/ListViewPrefix"/>
+                <$link to={{!!title}}><$view field="title"/></$link>
+                &nbsp;<$transclude tiddler="$:/plugins/gsd5/core/ui/lists/ListViewSuffix"/>
+            </div>
+        </$list>
     </div>
-    </$list>
-    <$list filter=<<list-composer gsd_type:$gsd_type$ gsd_status:$gsd_status$ gsd_complete:$gsd_complete$ realmAware:"true" sort:$sort$ order:$order$ groupBy:$groupBy$ groupTail:"true" groupTailHeader:"false" groupHeader:"false" customFilter:$customFilter$ ownerField:$ownerField$ hideFutureProj:$hideFutureProj$>>>
-        <div class="tc-menu-list-subitem">
-            <$transclude tiddler="$:/plugins/gsd5/core/ui/lists/ListViewPrefix"/>
-            <$link to={{!!title}}><$view field="title"/></$link>
-            &nbsp;<$transclude tiddler="$:/plugins/gsd5/core/ui/lists/ListViewSuffix"/>
-        </div>
-    </$list>
     </$reveal>
 </$reveal>
 </div>
